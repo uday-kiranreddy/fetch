@@ -1,0 +1,8 @@
+.About{
+    padding:2rem;
+}
+.About p{
+    font-size: 1.3em;
+    color:rgb(57, 47, 47);
+    font-weight: 800;
+}
