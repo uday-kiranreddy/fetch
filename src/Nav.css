@@ -4,23 +4,23 @@
 }
 
 .github-icon {
-  font-size: 2rem !important;
+  font-size: 1.5rem !important;
 }
 .navbar {
-  max-width: 100%;
+  width: 100%;
   background-color: var(--blackcolor);
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: auto;
-  padding: 15px;
+  padding: 5px;
   color: var(--whitecolor);
 }
 #logo_text {
   display: flex;
   align-items: center;
 }
-#logo_text > h2 {
+#logo_text > h3 {
   margin-left: 6px;
 }
 .navbar > li {
@@ -29,11 +29,11 @@
 .unordered-list {
   display: flex;
   align-items: center;
-  padding-right: 6rem;
+  padding-right: 2rem;
 }
 .links {
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-decoration: none;
 }
 .unordered-list > li {
@@ -43,6 +43,11 @@
 }
 .unordered-list li :hover {
   text-decoration: underline;
+}
+@media (max-width:450px){
+  .navbar .unordered-list  {
+    display:none;
+  }
 }
 
 /* form components */
@@ -72,12 +77,12 @@
   font-size: 1rem;
   border-radius: 6px;
   border: none;
-  cursor:pointer;
+  cursor: pointer;
 }
-.btn:hover{
-  color:black;
+.btn:hover {
+  color: black;
   background-color: grey;
-  transition:0.3s ease-in;
+  transition: 0.3s ease-in;
 }
 
 /* result container */
@@ -92,18 +97,19 @@
   border-radius: 6px;
   border: none;
 }
-.result-container{
-  display:grid;
-  grid-template-columns: repeat(4,1fr);
+.result-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
-.single-box{
-  margin:1rem;
-  padding:12px;
-  box-shadow: 0 0 4px;}
-.single-box img{
+.single-box {
+  margin: 1rem;
+  padding: 12px;
+  box-shadow: 0 0 4px;
+}
+.single-box img {
   border-radius: 10rem;
-  height:100px;
-  width:100px;
+  height: 100px;
+  width: 100px;
 }
 
 .loader {
@@ -115,6 +121,7 @@
   border-top: 4px solid #000;
   animation: rotate 1.5s linear infinite;
   margin-left: 50%;
+  margin-top: 3rem!important;
 }
 
 .loader::before,
@@ -146,4 +153,3 @@
     transform: rotate(360deg);
   }
 }
-

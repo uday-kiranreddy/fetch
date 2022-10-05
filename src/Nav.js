@@ -21,6 +21,7 @@ function Nav() {
       const response = await fetch(URL);
       const data = await response.json();
       setUsers(data);
+      console.log(data)
       setLoading(false);
       setShow(true);
     } catch (error) {
@@ -33,7 +34,7 @@ function Nav() {
       <nav className="navbar">
         <div id="logo_text">
           <FaGithub className="github-icon" />
-          <h2>Github Finder</h2>
+          <h3>Github Finder</h3>
         </div>
         <div>
           <ul className="unordered-list">
