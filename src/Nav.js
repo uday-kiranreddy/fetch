@@ -21,7 +21,6 @@ function Nav() {
       const response = await fetch(URL);
       const data = await response.json();
       setUsers(data);
-      console.log(data)
       setLoading(false);
       setShow(true);
     } catch (error) {
